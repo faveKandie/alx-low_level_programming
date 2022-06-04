@@ -13,6 +13,6 @@ int main(void)
 		putchar(letter);
 	for (LETTER = 'A'; LETTER <= 'Z'; LETTER++)
 		putchar(LETTER);
-	puchar ('\n');
+	putchar ('\n');
 	return (0);
 }
