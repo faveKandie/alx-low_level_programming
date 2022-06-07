@@ -5,7 +5,7 @@
  */
 int add(int num1, int num2)
 {
-	int num1, num2, result;
+	int result;
 
 	for (num1 = 0; num1 <= 9; num1++)
 	{
