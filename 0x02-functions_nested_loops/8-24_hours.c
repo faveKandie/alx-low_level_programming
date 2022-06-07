@@ -1,7 +1,8 @@
 #include "main.h"
 /**
  * jack_bauer - write a function that prints every minute of the day of Jack Bauer, starting from 00:00 to 23:59
- * @a:  the letter being used
+ * @hour: parameter being used
+ * @minute: another parameter being used
  * Return: Always 0 Success
  */
 void jack_bauer(void)
