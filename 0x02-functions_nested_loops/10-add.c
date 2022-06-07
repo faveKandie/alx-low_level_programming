@@ -18,7 +18,7 @@ int add(int num1, int num2)
 				_putchar(' ');
 			_putchar((result % 10) + '0');
 		}
+	}
 		_putchar('\n');
 		return (result);
-	}
 }
