@@ -6,8 +6,8 @@
 void times_table(void)
 {
 	int num;
-	int digit;
-	int result = num * digit;
+	int digit, result;
+        result = num * digit;
 
 	for (num = 0; num <= 9; num++)
 	{
