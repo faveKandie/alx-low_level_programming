@@ -7,9 +7,9 @@ int _islower(int c)
 {
 	int c;
 
-	while (c >= 'a'; c++)
+	while (c >= 'a')
 	{
-		for (c <= 'z'; c++)
+		for (c <= 'z')
 		{
 			_putchar(c);
 		}
