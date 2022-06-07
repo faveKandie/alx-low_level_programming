@@ -2,7 +2,7 @@
 /**
  * print_to_98 - Entry ruote
  * @n: parameters to be used
- * Return: Always 0 Success
+ * Return: Always n Success
  */
 void print_to_98(int n)
 {
