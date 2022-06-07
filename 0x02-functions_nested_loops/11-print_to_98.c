@@ -14,6 +14,6 @@ void print_to_98(int n)
 			 _putchar((n / 10) + '0');
 		 else
 			 _putchar(' ');
-		 _putchar(n % 10);
+		 _putchar((n % 10) + '0');
 	}
 }
