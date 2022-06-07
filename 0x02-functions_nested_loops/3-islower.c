@@ -5,18 +5,20 @@
  */
 int _islower(int c)
 {
-	char letter;
+	int c;
 
-	while (letter = 'a'; letter <= 'z'; letter++)
+	while (c >= 'a'; c++)
 	{
-		for (letter = 'A'; letter <= 'Z'; letter++)
+		for (c <= 'z'; c++)
 		{
-			_putchar(letter);
+			_putchar(c);
 		}
-		_putchar('\n');
-		return (0);
+		return (1);
 	}
-	_putchar(letter);
+	_putchar(c);
 	_putchar('\n');
 	return (1);
+
+	else
+		return (0);
 }
