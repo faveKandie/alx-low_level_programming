@@ -1,9 +1,9 @@
-#innclude "main.h"
+#include "main.h"
 /**
  * _islower - Returns one if c is lowercase
  * Return: 1 and 0 Success
  */
-int _islower(int c);
+int _islower(int c)
 {
 	char letter;
 
