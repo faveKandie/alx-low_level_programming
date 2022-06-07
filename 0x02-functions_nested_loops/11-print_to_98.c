@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdlio.h>
+#include <stdio.h>
 /**
  * print_to_98 - Entry ruote
  * @n: parameters to be used
