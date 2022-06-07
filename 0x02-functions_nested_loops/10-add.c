@@ -3,7 +3,7 @@
  * add - Entry point
  * Return: Always result Success
  */
-int add(int, int)
+int add(int num1, int num2)
 {
 	int num1, num2, result;
 
@@ -15,7 +15,7 @@ int add(int, int)
 			if ((result / 10) >= 0)
 				_putchar((result / 10) + '0');
 			else
-				_putchar(' /);
+				_putchar(' ');
 			_putchar((result % 10) + '0');
 		}
 		_putchar('\n');
