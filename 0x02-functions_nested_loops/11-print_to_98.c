@@ -2,7 +2,7 @@
 /**
  * print_to_98 - Entry ruote
  * @n: parameters to be used
- * Return: Always n Success
+ * Return: Always 0 Success
  */
 void print_to_98(int n)
 {
@@ -16,5 +16,4 @@ void print_to_98(int n)
 			 _putchar(' ');
 		 _putchar((n % 10) + '0');
 	}
-	return (n);
 }
