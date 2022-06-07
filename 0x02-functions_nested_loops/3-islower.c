@@ -5,20 +5,8 @@
  */
 int _islower(int c)
 {
-	int c;
-
-	while (c >= 'a')
-	{
-		for (c <= 'z')
-		{
-			_putchar(c);
-		}
-		return (1);
-	}
-	_putchar(c);
-	_putchar('\n');
-	return (1);
-
+	if (c >= 'a' && c <= 'z')
+		return (1)
 	else
 		return (0);
 }
