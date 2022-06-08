@@ -11,7 +11,7 @@ int main(void)
 	for (i = 0; i < 50; i++)
 	{
 		s = f1 + f2;
-		printf("lu%", s);
+		printf("li%", s);
 
 		f1 = f2;
 		f2 = s;
