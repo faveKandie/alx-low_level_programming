@@ -7,24 +7,34 @@ void print_times_table(int n)
 {
 	int digit, result;
 
-	for (n = 0; n <= 15; n++)
+	if (n >= 0 && n <= 15)
 	{
-		_putchar('0');
-		_putchar(',');
-		_putchar(' ');
-		for (digit = 1; digit <= 15; digit++)
+		for (num = 0; num <= n; num++)
 		{
-			result = n * digit;
-			if ((result / 10) > 0)
-				_putchar((result / 10) + '0');
-			else 
-				_putchar(' ');
-			_putchar((result % 10) + '0');
-
-			if (digit < 15)
+			_putchar('0');
+			for (digit = 1; digit <= n; digit++)
+			{
 				_putchar(',');
-			_putchar(' ');
+				_putchar(' ');
+
+				result = num * digit;
+				if (result <= 99)
+					_putchar(' ');
+				if (result <= 9)
+					_putchar(' ');
+
+				if (result >= 100)
+				{
+					_putchar((result / 100) + '0');
+					_putchar(((result / 10) % 10) + '0');
+				}
+				else if (resullt <= 99 && result >= 10)
+				{
+					_putchar((result / 10) + '0');
+				}
+				_putchar((result % 10) + '0');
+			}
+			_putchar('\n');
 		}
-		_putchar('\n');
 	}
 }
