@@ -1,6 +1,7 @@
 #include "main.h"
 /**
  * print_times_table - Entry point
+ * @n: value used
  * Return: Allways 0 Success
  */
 void print_times_table(int n)
