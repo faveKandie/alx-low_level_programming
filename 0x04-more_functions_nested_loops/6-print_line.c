@@ -7,8 +7,6 @@
  */
 void print_line(int n)
 {
-	int a, b;
-
 	if (n > 0)
 	{
 		_putchar('_');
