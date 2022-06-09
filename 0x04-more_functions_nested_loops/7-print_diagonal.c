@@ -2,17 +2,24 @@
 
 /**
  * print_diagonal - draws a diagonal line on the terminal
- * @n: character used
+ * @n: character printed
  */
 void print_diagonal(int n)
 {
-	int m;
+	int m, p;
 
 	if (n > 0)
 	{
 		for (m = 0; m < n; m++)
-			_putchar('\');
-	}
+		{
+			for (p = 0; p < m; p++)
+				_putchar(' ');
+			_putchar('\\');
 
+			if (len == n - 1)
+				continue;
+			_putchar('\n');
+		}
+	}
 	_putchar('\n');
 }
