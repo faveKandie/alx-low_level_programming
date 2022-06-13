@@ -7,8 +7,13 @@
  */
 void _puts(char *str)
 {
-	*str[6] = {'H', 'E', 'L', 'L', 'O', '\0'};
+	int i;
+	i = 0;
 
-	printf("string message: %s\n", *str);
-	return (0);
+	while (str[i] != '\0')
+	{
+		_putchar(str[i]);
+		i++;
+	}
+	_putchar('\n');
 }
