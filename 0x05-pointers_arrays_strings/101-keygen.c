@@ -8,23 +8,27 @@
  */
 int main(void)
 {
-	int r = 0;
-	int c = 0;
-	time_t t;
+	int pass[100];
+	int i, sum, n;
 
-	srand((unsigned int) time(&t));
+	sum = 0;
 
-	while (c < 2772)
+	srand(time(NULL));
+
+	for (i = 0; i < 100; i++)
 	{
+		pass[i] = rand() % 78;
+		sum += (pass[i] + '0');
+		putchar(pass[i] + '0');
 
-		r = rand() % 128;
-		if ((c + r) > 2772)
+		if ((2772 - sum) - '0' < 78)
+		{
+			n = 2772 -sum - '0';
+			sum += n;
+			putchar(n + '0');
 			break;
-
-		c = c + r;
-
-		printf("%c", r);
+		}
 	}
-	printf("%c\n", (2772 - c));
+
 	return (0);
 }
