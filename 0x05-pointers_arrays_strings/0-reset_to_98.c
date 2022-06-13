@@ -2,6 +2,7 @@
 
 /**
  * reset_to_98 - Entry point
+ * @n: character being used
  * @*n: pointer being used
  * Return: Always 0 Success
  */
