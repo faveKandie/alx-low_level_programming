@@ -2,6 +2,7 @@
 
 /**
  * print_rev - Entry point
+ * @*s: string being used
  * @s: character used
  * Return: Always 0 Success
  */
