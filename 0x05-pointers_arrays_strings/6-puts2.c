@@ -10,8 +10,8 @@ void puts2(char *str)
 	int i, j;
 	i = 0;
 
-	while (s[i] != '\n')
-		i++
+	while (str[i] != '\n')
+		i++;
 			i--;
 
 	for (j = 0; j <= i; j++)
