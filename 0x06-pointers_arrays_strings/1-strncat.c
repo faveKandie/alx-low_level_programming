@@ -5,13 +5,11 @@
  * @dest: character being used
  * @src: second character being used
  * @n: third charcter being used
- * Return: Always 0 Success
+ * Return: A pointer to the resulting string dest
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	int i, j;
-	i = 0;
-	j = 0;
+	int i = 0, j = 0;
 
 	while (dest[i++])
 		j++;
