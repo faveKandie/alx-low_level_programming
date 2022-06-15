@@ -2,8 +2,8 @@
 
 /**
  * *_strncpy - Entry point
- * @*dest: character being used
- * @*src: second character being used
+ * @dest: character being used
+ * @src: second character being used
  * @n: third character being used
  * Return: Always 0 Success
  */
