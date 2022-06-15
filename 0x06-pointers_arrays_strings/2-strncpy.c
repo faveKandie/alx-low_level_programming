@@ -5,27 +5,20 @@
  * @dest: character being used
  * @src: second character being used
  * @n: third character being used
- * Return: Always 0 Success
+ * Return: Always dest
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-	int i, j;
+	int i = 0, j = 0;
 
-	i = 0;
-
-	for (dest[i] != '\0')
-	{
-		i++;
-	}
-
-	j = 0;
-	for (j < n)
-	{
-		dest[i] = src[j];
+	while (dest[i++])
 		j++;
-		i++;
-	}
 
-	dest[i] != '\0';
+	for (i = 0; src[i] && i < n; i++)
+		dest[i] = src[i];
+
+	for (i = j; i < n; i++)
+		dest[i] = '\0';
+
 	return (dest);
 }
