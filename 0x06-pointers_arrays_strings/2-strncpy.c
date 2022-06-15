@@ -5,13 +5,13 @@
  * @dest: character being used
  * @src: second character being used
  * @n: third character being used
- * Return: Always dest
+ * Return: A pointer to the resulting string dest
  */
 char *_strncpy(char *dest, char *src, int n)
 {
 	int i = 0, j = 0;
 
-	while (dest[i++])
+	while (src[i++])
 		j++;
 
 	for (i = 0; src[i] && i < n; i++)
