@@ -2,6 +2,7 @@
 
 /**
  * *string_toupper - Entry point
+ * @str: character being used
  * Return: Always 0 Success
  */
 char *string_toupper(char *)
