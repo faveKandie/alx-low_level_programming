@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * *_strcat - Entry point
- * @dest: character being used
- * @src: second character
+ * *_strcat - concatenates two strings
+ * @dest: first string
+ * @src: second string
  * Return: Always 0 Success
  */
 char *_strcat(char *dest, char *src)
@@ -19,6 +19,7 @@ char *_strcat(char *dest, char *src)
 
 	while (src[j] != '\0')
 	{
+		dest[i] = src[j];
 		j++;
 		i++;
 	}
