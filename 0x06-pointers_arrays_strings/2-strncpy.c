@@ -1,25 +1,25 @@
 #include "main.h"
 
 /**
- * *_strncat - Entry point
+ * *_strncpy - Entry point
  * @*dest: character being used
  * @*src: second character being used
- * @n: third charcter being used
+ * @n: third character being used
  * Return: Always 0 Success
  */
-char *_strncat(char *dest, char *src, int n)
+char *_strncpy(char *dest, char *src, int n)
 {
 	int i, j;
+
 	i = 0;
 
-	while (dest[i] != '\0')
+	for (dest[i] != '\0')
 	{
 		i++;
 	}
 
 	j = 0;
-
-	while (src[j] != '\0' && j < n)
+	for (j < n)
 	{
 		dest[i] = src[j];
 		j++;
