@@ -2,19 +2,28 @@
 
 /**
  * *string_toupper - a function that changes all lower of a string to upper
- * @c: Pointer
- * Return: pointer in return
+ * @c: String to be reversed
+ * Return: Always 0
  */
 char *string_toupper(char *)
 {
-	int i;
+	int i, j;
+	char letter;
 
-	for (i = 0; a[i] != 0; i++)
+	i = 0;
+
+	while (str[i] != '\0')
+		i++;
+
+	for (j = 0; j < i; j++)
 	{
-		if (a[i] > 90 && a[i] != 10)
+		letter = str[j];
+		if (letter >= 'a' && letter <= 'z')
 		{
-			a[i] = a[i] - 32;
+			letter -= 32;
+			str[j] = letter;
 		}
 	}
-	return (a);
+
+	return (str);
 }
