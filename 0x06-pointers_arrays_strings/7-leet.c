@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * *leet - Entry point
- * @n: character being used
- * Return: Always 0 Success
+ * leet - Entry point
+ * @str: character being used
+ * Return: Always str
  */
 char *leet(char *)
 {
