@@ -1,26 +1,23 @@
 #include "main.h"
 
 /**
- * leet - Entry point
- * @n: character being used
- * Return: Always n Success
+ * leet - encodes a string into 1337
+ * @s: string to encode
+ * Return: address of s
  */
-char *leet(char *)
+char *leet(char *s)
 {
-	int i, x;
-	int find[] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
-	int replacer[] = {'4', '3', '0', '7', '1'};
+	int i, j;
+	char a[] = "aAeEoOtTlL";
+	char b[] = "4433007711";
 
-	for (i = 0; n[i] != '\0'; i++)
+	for (i = 0; *(s + i); i++)
 	{
-		for (x = 0; x <= 9; x++)
+		for (j = 0; j <= 9; j++)
 		{
-			if (n[i] == find[x])
-			{
-				n[i] = replacer[x / 2];
-				x = 9;
-			}
+			if (a[j] == *(s + i))
+				*(s + i) = b[j];
 		}
 	}
-	return (n);
+	return (s);
 }
