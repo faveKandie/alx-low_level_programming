@@ -2,20 +2,17 @@
 
 /**
  * *string_toupper - a function that changes all lower of a string to upper
- * @c: Pointer to first element
- * Return: c
+ * @c: Pointer
+ * Return: pointer in return
  */
 char *string_toupper(char *)
 {
-	int x = 0;
-
-	while (c[x] != '\0')
+	for (i = 0; a[i] != 0; i++)
 	{
-		if (c[x] >= 'a' && c[x] <= 'z')
+		if (a[i] > 90 && a[i] != 10)
 		{
-			c[x] = c[x] - 'a' + 'A';
+			a[i] = a[i] - 32;
 		}
-		x++;
 	}
-	return (c);
+	return (a);
 }
