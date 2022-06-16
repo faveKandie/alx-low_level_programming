@@ -7,6 +7,8 @@
  */
 char *string_toupper(char *)
 {
+	int i;
+
 	for (i = 0; a[i] != 0; i++)
 	{
 		if (a[i] > 90 && a[i] != 10)
