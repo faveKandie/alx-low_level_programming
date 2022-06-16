@@ -2,19 +2,20 @@
 
 /**
  * *string_toupper - Entry point
- * @str: character being used
- * Return: Always 0 Success
+ * @a: character being used
+ * Return: a is return
  */
 char *string_toupper(char *)
 {
-	int index = 0;
+	int i;
 
-	while (str[index])
+	for (i = 0; a[i] != 0; i++)
 	{
-		if (str[index] >= 'a' && str[index] <= 'z')
-			str[index] -= 32;
-
-		index++;
+		if (a[i] > 90 && a[i] != 10)
+		{
+			a[i] = a[i] - 32;
+		}
 	}
-	return (str);
+
+	return (a);
 }
