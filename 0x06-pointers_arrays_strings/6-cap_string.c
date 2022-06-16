@@ -3,25 +3,35 @@
 /**
  * *cap_string - Entry point
  * @str: character being used
- * Return: Always 0 Success
+ * Return: A pointer to the changed string str
  */
 char *cap_string(char *)
 {
-	int symb[14] = {' ', '\t', '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
+	int index = 0;
 
-	int i, j;
-	i = 0;
-
-	for (str[i] != '\0')
+	while (str[index])
 	{
-		i++;
-		if (str[0] >= 97 && str[0] <= 122)
-		{
-			str[0] = str[0] - 32;
-		}
-		for (j = 0; j < 14; j++)
-			if (str[i] >= 97 && str[i] <= 122 && str[i - 1] == symb[j])
-				str[i] = str[i] - 32;
+		while (!(str[index] >= 'a' && str[index] <= 'z'))
+			index++;
+
+		if (str[index - 1] == ' ' ||
+				str[index - 1] == '\t' ||
+				str[index - 1] == '\n' ||
+				str[index - 1] == ',' ||
+				str[index - 1] == ';' ||
+				str[index - 1] == '.' ||
+				str[index - 1] == '!' ||
+				str[index - 1] == '?' ||
+				str[index - 1] == '"' ||
+				str[index - 1] == '(' ||
+				str[index - 1] == ')' ||
+				str[index - 1] == '{' ||
+				str[index - 1] == '}' ||
+				index == 0)
+			str[index] -= 32;
+
+		index++;
 	}
+
 	return (str);
 }
