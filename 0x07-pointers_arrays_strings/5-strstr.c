@@ -2,8 +2,8 @@
 
 /**
  * _strstr - a function that locates a substring
- * @haystack: first substring
- * @needle: second substring
+ * @haystack: string in which to check for needle
+ * @needle: substring to find in haystack
  * Return: a pointer to the beginning of the located substring, or NULL if the substring is not found
  */
 char *_strstr(char *haystack, char *needle)
