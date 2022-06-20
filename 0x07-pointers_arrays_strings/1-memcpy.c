@@ -2,18 +2,19 @@
 
 /**
  * _memcpy - copies memory area
- * @dest: memory area to be filled
- * @src: memory area being copied
- * @n: number of area to be filled
+ * @dest: paste string
+ * @src: copy string
+ * @n: number of area 
  * Return: pointter to memory dest
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	unsigned int i;
+	unsigned int i = 0;
 
-	for (i = 0; n > 0 ; i++, n--)
+	while (i < n)
 	{
-		dest[i] = src[i];
+		*(dest + i) = *(src + i);
+		i++;
 	}
 	return (dest);
 }
