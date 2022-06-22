@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _sqrt_recursion - returns the natural sqrt of a number
+ * sqrt_check - returns the natural sqrt of a number
  * @c: number being used
  * @g: guess at sqrt
  * Return: -1 or sqrt of c
@@ -16,7 +16,7 @@ int sqrt_check(int g, int c)
 }
 
 /**
- * _sqrt_recursion - returns the natural sqrt of a number 
+ * _sqrt_recursion - returns the natural sqrt of a number
  * @n: number being used
  * Return: natural square root or -1
  */
