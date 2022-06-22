@@ -5,7 +5,7 @@
  * @n: character used
  * Return: n success
  */
-int factorial(int n);
+int factorial(int n)
 {
 	if (n <= 1)
 		return (1);
