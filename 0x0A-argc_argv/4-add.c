@@ -8,7 +8,7 @@
  * @argv: an argument vector from pointers to strings
  * Return: Always 0 on success, 1 on error
  */
-int main(int argc, char *argv[]);
+int main(int argc, char *argv[])
 {
 	int a = 0, i, j;
 

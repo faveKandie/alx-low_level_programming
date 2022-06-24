@@ -7,7 +7,7 @@
  * @argv: an argument vector of pointers to strings
  * Return: Always 0 and 1 success
  */
-int main(int argc, char *argv[]);
+int main(int argc, char *argv[])
 {
 	int a, b, c;
 

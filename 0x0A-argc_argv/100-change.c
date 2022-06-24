@@ -7,7 +7,7 @@
  * @argv: argument vectors from pointerd to strings
  * Return: 0 on success, 1 on error
  */
-int main(int argc, char *argv[]);
+int main(int argc, char *argv[])
 {
 	int a, n = 0, i, t;
 	int c[5] = {25, 10, 5, 2, 1};
