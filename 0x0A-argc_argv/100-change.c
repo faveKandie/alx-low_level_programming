@@ -4,8 +4,8 @@
 /**
  * main - prints minimum number of coins to make change for an amount of money
  * @argc: number of arguments passed to the function
- * @argv: argument vectors from pointerd to strings
- * Return: 0 on success, 1 on error
+ * @argv: argument vectors from pointers to strings
+ * Return: 0 on success, 1 on Error
  */
 int main(int argc, char *argv[])
 {
@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 
 	if (argc != 2)
 	{
-		puts("error");
+		puts("Error");
 		return (1);
 	}
 	a = atoi(argv[1]);

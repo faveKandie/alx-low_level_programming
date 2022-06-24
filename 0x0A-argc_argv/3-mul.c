@@ -1,11 +1,11 @@
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - multiplies two numbers
  * @argc: number of arguments passed to the function
  * @argv: an argument vector of pointers to strings
- * Return: Always 0 and 1 success
+ * Return: 0 if no errors, else 1
  */
 int main(int argc, char *argv[])
 {
