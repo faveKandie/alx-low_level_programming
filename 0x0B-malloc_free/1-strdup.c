@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+
 /**
  * _strdup - returns a pointer to a newly allocated space in memory
  * @str: string to be copied
@@ -11,7 +12,7 @@ char *_strdup(char *str)
 	int index, len = 0;
 
 	if (str == NULL)
-			return (NULL);
+		return (NULL);
 	for (index = 0; str[index]; index++)
 		len++;
 
