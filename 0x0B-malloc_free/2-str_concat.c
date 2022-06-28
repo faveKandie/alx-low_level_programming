@@ -10,7 +10,7 @@
 char *str_concat(char *s1, char *s2)
 {
 	int i, j, k;
-	char *newStr = NULL;
+	char *newStr;
 
 	if (s1 == NULL)
 		s1 = "";
@@ -35,5 +35,4 @@ char *str_concat(char *s1, char *s2)
 		newStr[k + i] = s2[k];
 
 	return (newStr);
-	free(newStr);
 }
