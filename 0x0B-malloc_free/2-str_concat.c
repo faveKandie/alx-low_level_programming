@@ -3,9 +3,10 @@
 #include <stdio.h>
 
 /**
- * _strlen - find length of a string
- * @s: string
- * Return: intt
+ * str_concat - a function
+ * @s1: first string
+ * @s2: second string
+ * Return: int
  */
 char *str_concat(char *s1, char *s2)
 {
