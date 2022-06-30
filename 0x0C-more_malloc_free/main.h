@@ -15,6 +15,9 @@ int **alloc_grid(int width, int height);
 void free_grid(int **grid, int height);
 char *argstostr(int ac, char **av);
 char **strtow(char *str);
-
+void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
+int _atoi(const char *s);
+void print_int(unsigned long int n);
+void _puts(char *str);
 
 #endif
