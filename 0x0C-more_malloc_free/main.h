@@ -15,16 +15,6 @@ char *create_xarray(int size);
 char *iterate_zeroes(char *str);
 void get_prod(char *prod, char *mult, int digit, int zeroes);
 void add_nums(char *final_prod, char *next_prod, int next_len);
-char *create_array(unsigned int size, char c);
-char *_strdup(char *str);
-char *str_concat(char *s1, char *s2);
-int **alloc_grid(int width, int height);
-void free_grid(int **grid, int height);
-char *argstostr(int ac, char **av);
-char **strtow(char *str);
 int _atoi(const char *s);
-void print_int(unsigned long int n);
-void _puts(char *str);
-unsigned int _strlen(char *s)
 
 #endif
