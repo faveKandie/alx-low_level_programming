@@ -16,6 +16,5 @@ char *iterate_zeroes(char *str);
 void get_prod(char *prod, char *mult, int digit, int zeroes);
 void add_nums(char *final_prod, char *next_prod, int next_len);
 int main(int argc, char *argv[]);
-int _atoi(const char *s);
 
 #endif

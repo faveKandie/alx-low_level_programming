@@ -7,7 +7,6 @@ char *create_xarray(int size);
 char *iterate_zeroes(char *str);
 void get_prod(char *prod, char *mult, int digit, int zeroes);
 void add_nums(char *final_prod, char *next_prod, int next_len);
-
 /**
  * find_len - Finds the length of a string
  * @str: string
@@ -22,7 +21,6 @@ int find_len(char *str)
 
 	return (len);
 }
-
 /**
  * create_xarray - Creates an array of character
  * @size: size of array
@@ -46,7 +44,6 @@ char *create_xarray(int size)
 
 	return (array);
 }
-
 /**
  * iterate_zeroes - Iterates a string of numbers
  * @str: string
@@ -59,7 +56,6 @@ char *iterate_zeroes(char *str)
 
 	return (str);
 }
-
 /**
  * get_digit - Converts a digit character
  * @c: character
@@ -78,7 +74,6 @@ int get_digit(char c)
 
 	return (digit);
 }
-
 /**
  * get_prod - Multiplies a string of numbers by a single digit
  * @prod: The buffer
@@ -125,7 +120,6 @@ void get_prod(char *prod, char *mult, int digit, int zeroes)
 	if (tens)
 		*prod = (tens % 10) + '0';
 }
-
 /**
  * add_nums - Adds the numbers stored in two strings
  * @final_prod: The buffer
@@ -167,7 +161,6 @@ void add_nums(char *final_prod, char *next_prod, int next_len)
 	if (tens)
 		*final_prod = (tens % 10) + '0';
 }
-
 /**
  * main - Multiplies two positive numbers
  * @argv: The number of arguments
