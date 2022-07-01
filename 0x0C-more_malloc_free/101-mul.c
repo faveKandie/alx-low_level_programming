@@ -10,6 +10,8 @@
  
  * @s: string to be evaluated
 
+ *
+
  * Return: 0 if a non-digit is found, 1 otherwise
 
  */
@@ -41,6 +43,8 @@ int is_digit(char *s)
  * _strlen - returns the length of a string
 
  * @s: string to evaluate
+
+ *
 
  * Return: the length of the string
 
@@ -87,6 +91,8 @@ void errors(void)
  * @argc: number of arguments
 
  * @argv: array of arguments
+
+ *
 
  * Return: always 0 (success)
 
