@@ -14,7 +14,7 @@ int op_mod(int a, int b);
  */
 int op_add(int a, int b)
 {
-	return (a +  b);
+	return (a + b);
 }
 
 /**
@@ -29,7 +29,7 @@ int op_sub(int a, int b)
 }
 
 /**
- * p_mul - Returns the product of two numbers
+ * op_mul - Returns the product of two numbers
  * @a: the first number
  * @b: the second number
  * Return: The product of a and b
