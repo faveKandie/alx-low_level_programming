@@ -24,7 +24,7 @@ void print_char(va_list arg)
  * print_int - prints an integer
  * @arg: arguments pointing to the integer being printed
  */
-void print_int(va_list arg);
+void print_int(va_list arg)
 {
 	int num;
 
@@ -36,7 +36,7 @@ void print_int(va_list arg);
  * print_float - prints a float
  * @arg: arguments pointing to the float being printed
  */
-void print_float(va_list arg);
+void print_float(va_list arg)
 {
 	float num;
 
